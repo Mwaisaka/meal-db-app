@@ -18,6 +18,8 @@ function App() {
   const [selectedMeal, setSelectedMeal] = useState(null);
   const [feedbacks, setFeedbacks] = useState([]);
 
+  const mealsRef = useRef();
+
   useEffect(() => {
     axios
       .get("https://www.themealdb.com/api/json/v1/1/categories.php")

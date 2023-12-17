@@ -28,7 +28,7 @@ function Home({
         setSelectedCategory={setSelectedCategory}
         categories={categories}
       />
-      <FilterMeal meals={meals} handleMealClick={handleMealClick} setMeal={setMeal}/>
+      <FilterMeal meals={meals} handleMealClick={handleMealClick} setMeal={setMeal} />
       <div ref={instructionsRef}>
         <SelectMeal
           handleCloseDetails={handleCloseDetails}

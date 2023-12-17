@@ -1,7 +1,8 @@
-// Category.js
-import React from 'react';
 
-export default function Category({ setSelectedCategory, categories }) {
+import React, { forwardRef } from "react";
+
+const Category = forwardRef(({ setSelectedCategory, categories }, ref) => {
+// export default function Category({ setSelectedCategory, categories }) {
   function handleClick(category) {
     setSelectedCategory(category);
     // No need for categoryRef here
@@ -22,4 +23,9 @@ export default function Category({ setSelectedCategory, categories }) {
       </div>
     </div>
   );
-}
+});
+
+export default Category;
+
+
+

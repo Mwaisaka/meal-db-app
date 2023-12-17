@@ -1,4 +1,4 @@
-//FilterMeal.js
+// //FilterMeal.js
 import React, { forwardRef } from 'react';
 
 const FilterMeal = forwardRef(({ meals, handleMealClick,setMeal }, ref)  => {
@@ -12,7 +12,7 @@ const FilterMeal = forwardRef(({ meals, handleMealClick,setMeal }, ref)  => {
   }
     return ( 
    <div>
-      <h2>Filtered Meals</h2>
+      <h2>Recipes</h2>
       <div className="meals-container">
         {meals.map(meal => (
           <div key={meal.idMeal} className="meal-item" onClick={() => handleMealClick(meal)}>
@@ -24,4 +24,3 @@ const FilterMeal = forwardRef(({ meals, handleMealClick,setMeal }, ref)  => {
     </div>)
 })
 export default FilterMeal;
-

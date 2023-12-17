@@ -14,7 +14,7 @@ const SelectMeal = forwardRef(({ selectedMeal, handleCloseDetails }, ref) => {
             const ingredient = selectedMeal[`strIngredient${i}`];
             const measure = selectedMeal[`strMeasure${i}`];
             return ingredient && measure ? (
-              <div key={i}>{`${measure} ${ingredient}`}</div>
+              <li className="list" key={i}>{`${measure} ${ingredient}`}</li>
             ) : null;
           })}
         </div>
